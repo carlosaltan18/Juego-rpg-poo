@@ -10,11 +10,11 @@ Juego de rol por turnos desarrollado en Java. Permite a 1 o 2 jugadores luchar c
 
 ## Estructura del Proyecto
 
-src/
-├─ controller/ # Controlador del juego y lógica de turnos
-├─ model/ # Clases de jugadores, enemigos, ítems y batalla
-├─ view/ # Vista por consola
-└─ Principal.java # Clase main que ejecuta el juego
+- src/
+- ├─ controller/ # Controlador del juego y lógica de turnos
+- ├─ model/ # Clases de jugadores, enemigos, ítems y batalla
+- ├─ view/ # Vista por consola
+- └─ Principal.java # Clase main que ejecuta el juego
 
 
 ## Compilar el Proyecto
@@ -27,7 +27,8 @@ javac -d bin $(find src -name "*.java")
 
 javac -d bin src\**\*.java
 
-Ejecutar el Juego
+**En PowerShell**
+javac -d bin (Get-ChildItem -Recurse -Filter *.java src | ForEach-Object { $_.FullName })
 
 Ejecuta la clase principal desde la carpeta bin:
 
